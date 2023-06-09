@@ -9,6 +9,14 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+//setup CORS
+var cors = require('cors')
+app.use(cors({
+  origin: '*', // Allow requests from any origin.
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow the specified methods.
+  headers: ['Authorization', 'Content-Type'], // Allow the specified headers.
+}));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
