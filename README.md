@@ -10,3 +10,6 @@ To run:
 rm -rf package-lock.json ; rm -rf node-modules/ ; npm i
 npm start
 ```
+
+To test:  
+See if http://localhost:3001/images/thumbnails/7111-m.jpg returns/renders an image
