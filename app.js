@@ -11,11 +11,7 @@ var app = express();
 
 //setup CORS
 var cors = require('cors')
-app.use(cors({
-  origin: '*', // Allow requests from any origin.
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow the specified methods.
-  headers: ['Authorization', 'Content-Type'], // Allow the specified headers.
-}));
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
